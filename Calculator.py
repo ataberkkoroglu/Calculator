@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QVBoxLayout,QHBoxLayout,QPushButton,QLineEdit,QLabel,QApplication,QMainWindow,QWidget
 from PyQt5.QtGui import QFont,QIcon,QPixmap
-
 import sys,numpy as np,math
+
 class Calculator(QMainWindow):
     
     def __init__(self):
