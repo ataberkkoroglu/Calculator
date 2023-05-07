@@ -137,7 +137,7 @@ class Calculator(QMainWindow):
         self.Seven.setFont(QFont("Arial",20,4))
         self.Eight.setFont(QFont("Arial",20,4))
         self.Nine.setFont(QFont("Arial",20,4))
-        self.point.setFont(QFont("Arial",20,4))
+        
         
         self.equal.setShortcut("Return")
            
@@ -290,7 +290,7 @@ class Calculator(QMainWindow):
     
     def Print(self):
         sender=self.windows.sender()
-        self.result=list()
+        
         
         if sender.text()=="Shift":
             
@@ -374,7 +374,7 @@ class Calculator(QMainWindow):
             
         elif sender.text()=='C':
             self.expression=" "*self.text.width()
-            self.function_expression=""
+            
         elif sender.text()=='()':
             self.brackets_state +=1
             if self.function_bracket:
@@ -503,7 +503,7 @@ class Calculator(QMainWindow):
               pass
             elif (float(self.text.text())>=0):
                self.expression +=(str(np.cbrt(float(self.text.text()))))
-               self.result.append(str(np.cbrt(float(self.text.text()))))
+               
             
         elif sender.text()=="cosh":
             self.function_bracket=True
